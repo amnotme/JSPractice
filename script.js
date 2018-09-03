@@ -14,7 +14,7 @@ let openDoor3;
 
 let startButton = document.getElementById('start');
 
-let numClosedDoors = 3;
+let numClosedDoors = 2;
 
 
 
@@ -47,7 +47,8 @@ const isClicked = (door) => {
 };
 
 const playDoor = () => {
-  if (numClosedDoors === 0) {
+	console.log(numClosedDoors);
+	if (numClosedDoors === 0) {
 
     gameOver('win');
   }
